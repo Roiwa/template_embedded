@@ -1,19 +1,35 @@
 # Embedded Project Template
 
 Project
+
 |_ build
+
     |_ bin
+
     |_ obj
+
 |_ docs
+
 |_ external
+
 |_ src
+
     |_ app
+
     |_ common
+
     |_ drivers
+
     |_ test
+
     |_ main.c
+    
 |_ tools
+
+|_ .gitignore
+
 |_ Makefile
+
 |_ README.md
 
 ## build Folder
@@ -27,24 +43,29 @@ In this folder, we put all the information of the project. A good practice is to
 The external folder will hold any external code (which does not run inside the MCU) needed for the project. For example, a GUI made in Python which receives the information from the MCU. The best way to use this folder is to use a **git submodule** to update this code independently from the rest.
 
 ## src Folder
-This folder contains all the source files, implementation and headers files. Inside it has different folders depending on their purpose
+This folder contains all the source files, implementation and headers files. Inside it has different folders depending on their purpose.
 
 ### app Folder
-The app folder holds all source files of the app layer. The app layer means the main functionality of your embedded system, such as driving a drone
+The app folder holds all source files of the app layer. The app layer means the main functionality of your embedded system, such as driving a drone.
 
 ### common Folder
-The common folder should have all files shared by the app and drivers folder
+The common folder should have all files shared by the app and drivers folder.
 
 ### drivers Folder
-The driver folder holds all source files of the driver layer. This files are those that control electronics which the MCU interacts with and also its peripherals (IOs, timers, interrupts, etc.)
+The driver folder holds all source files of the driver layer. This files are those that control electronics which the MCU interacts with and also its peripherals (IOs, timers, interrupts, etc.).
 
 ### test Folder
 This folder should have the test files of the project, such as unit tests.
 
 ### main.c
-It will hold the main program of your embedded system
+It will hold the main program of your embedded system.
 
 ## tools Folder
+The tools folder will have all the scripts that help you to develop the project, such as a debugger.
+
+## .gitignore
+This file indicates to git which are the files of the project that must ignore.
+
 ## Makefile
 This file allows to compile the whole project without writing by hand all the dependencies of files in the project, only typing "make" in the command line.
 
