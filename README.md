@@ -56,3 +56,5 @@ This file allows to compile the whole project without writing by hand all the de
 
 ## README.md
 It has all the needed information to understand what is the purpose of the project, how to run it, and (if needed) how to develop it.
+
+**Note**: remove all the .gitkeep files in the project. Their purpose is to be included in git repository when empty.
