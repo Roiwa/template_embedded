@@ -1,36 +1,21 @@
 # Embedded Project Template
 
 Project
-
-|_ build
-
-    |_ bin
-
-    |_ obj
-
-|_ docs
-
-|_ external
-
-|_ src
-
-    |_ app
-
-    |_ common
-
-    |_ drivers
-
-    |_ test
-
-    |_ main.c
-    
-|_ tools
-
-|_ .gitignore
-
-|_ Makefile
-
-|_ README.md
+- build
+    - bin
+    - obj
+- docs
+- external
+- src
+    - app
+    - common
+    - drivers
+    - test
+    - main.c   
+- tools
+- .gitignore
+- Makefile
+- README.md
 
 ## build Folder
 This folder holds all final files to run the project in the MCU. The bin folder will have the executable file of the MCU, and the obj folder all the .o files. The objective of the last folder is to hold all .o, so that if we need to compile again the project, only files we have currently changed are compiled, reducing the compiling time (completely necessary in big projects).
